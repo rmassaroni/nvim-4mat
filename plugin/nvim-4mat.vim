@@ -18,7 +18,7 @@ let s:module_path = s:lua_rocks_deps_loc . "/lua-ljsqlite3.lua"
 ""exe "lua package.path = package.path .. ';" . s:lua_rocks_deps_loc . "/lua-?/init.lua'"
 exe "lua package.path = package.path .. ';" . s:module_path . "'"
 
-exe "lua print(s:lua_rocks_deps_loc)"
+""exe "lua print(s:lua_rocks_deps_loc)"
 
 " Exposes the plugin's functions for use as commands in Neovim.
 command! -nargs=0 FetchTodos lua require("nvim-4mat").fetch_todos()
