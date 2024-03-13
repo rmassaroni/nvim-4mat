@@ -1,5 +1,5 @@
 -- Imports the module for handling SQLite.
-local sqlite = require("nvim-4mat.deps.lua-ljsqlite3.init")
+local sqlite = require("ljsqlite3")
 
 -- Creates an object for the module.
 local M = {}
