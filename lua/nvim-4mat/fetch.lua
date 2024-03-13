@@ -1,14 +1,5 @@
-local function add_lsqlite3_to_path()
-    local plugin_dir = vim.fn.expand("<sfile>:p:h") -- Get the directory of the current Lua file
-    local lsqlite3_path = plugin_dir .. "/../deps/lua-lsqlite3/?.lua"
-    package.path = package.path .. ";" .. lsqlite3_path
-end
-
--- Call the function to add lsqlite3 to the Lua package path
-add_lsqlite3_to_path()
-
 -- Imports the module for handling SQLite.
-local sqlite = require("lua-ljsqlite3")
+local sqlite = require("ljsqlite3")
 
 -- Creates an object for the module.
 local M = {}
