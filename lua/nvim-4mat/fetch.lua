@@ -8,7 +8,7 @@ end
 add_lsqlite3_to_path()
 
 -- Imports the module for handling SQLite.
-local sqlite = require("ljsqlite3")
+local sqlite = require("lua-ljsqlite3")
 
 -- Creates an object for the module.
 local M = {}
