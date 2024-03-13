@@ -16,7 +16,7 @@ let g:loaded_nvim_4mat = 1
 let s:lua_rocks_deps_loc =  expand("<sfile>:h:r") . "/../lua/nvim-4mat/deps"
 exe "lua package.path = package.path .. ';" . s:lua_rocks_deps_loc . "/lua-?/init.lua'"
 
-exe "lua print(package.path)"
+""exe "lua print(package.path)"
 
 " Exposes the plugin's functions for use as commands in Neovim.
 command! -nargs=0 FetchTodos lua require("nvim-4mat").fetch_todos()
