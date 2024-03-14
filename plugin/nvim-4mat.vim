@@ -14,9 +14,9 @@ let g:loaded_nvim_4mat = 1
 " Defines a package path for Lua. This facilitates importing the
 " Lua modules from the plugin's dependency directory.
 let s:lua_rocks_deps_loc =  expand("<sfile>:h:r") . "/../lua/nvim-4mat/deps"
-let s:module_path = s:lua_rocks_deps_loc . "/lua-ljsqlite3.lua"
-""exe "lua package.path = package.path .. ';" . s:lua_rocks_deps_loc . "/lua-?/init.lua'"
-exe "lua package.path = package.path .. ';" . s:module_path . "'"
+""let s:module_path = s:lua_rocks_deps_loc . "/lua-ljsqlite3.lua"
+exe "lua package.path = package.path .. ';" . s:lua_rocks_deps_loc . "/lua-?/init.lua'"
+""exe "lua package.path = package.path .. ';" . s:module_path . "'"
 
 ""exe "lua print(s:lua_rocks_deps_loc)"
 
